@@ -8,25 +8,23 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
     <link rel="manifest" href="./favicon/site.webmanifest">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Sway Branding Agency</title>
 </head>
 <body>
-    <header>
+    <header class="welcome">
         <div class="top">
-            <div>
-                <p>+1 212 948 2700</p>
-                <p>Help Desk</p>
-                <p>Why Sway</p>
+                    <div class="number"><p ><a href="">+1 212 948 2700</a></p></div>
+                    <div class="number"><p><a href="">Help Desk</a></p></div>
+                    <div class="number2" id="why"><p><a href="">Why Sway</a></p></div>
+                <div class="number"><a href="https://www.swaytheme.com/branding-agency/#" target="_blank" id="face"><i class='bx bxl-facebook-circle'></i></a></div>
+                <div class="number"><a href="https://www.swaytheme.com/branding-agency/#" target="_blank" id="insta"><i class='bx bxl-instagram'></i></a></div>
+                <div class="number2"><a href="https://www.swaytheme.com/branding-agency/#" target="_blank" id="twitt"><i class="fa-brands fa-x-twitter"></i></a></div>
             </div>
-            <div>
-                <a href=""><i class='bx bxl-facebook'></i></a>
-                <a href=""><i class='bx bxl-instagram'></i></a>
-                <a href=""><img src="./images/twitter.jpg" alt="twitter"></a>
-            </div>
-        </div>
-        <nav>
-            <div>
-                <p>SWAY</p>
+        <nav class="laptop">
+            <div class="logo">
+                SWAY
             </div>
             <ol>
                 <li><a href="">Demos</a></li>
@@ -36,24 +34,49 @@
                 <li><a href="">Shop</a></li>
                 <li><a href="">Blocks</a></li>
                 <li><a href="">Elements</a></li>
-                <li><a href="">Extra</a></li>
+                <li><a href="" id="extra">Extra</a></li>
             </ol>
-            <div><img src="./images/USA Logo.jpg" alt="countries"></div>
+            <div class="coun"><a href="" id="country"><img src="./images/USA Logo.jpg" alt="countries"></a></div>
             <div><a href=""><i class='bx bx-search'></i></a></div>
-            <div><a href="">Contact Us</a></div>
+            <div class="call"><a href="">Contact Us</a></div>
+        </nav>
+        <nav class="mobile">
+            <div class="logo">
+                SWAY
+            </div>
+            <div><a href=""><i class='bx bx-search'></i></a></div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ol class="navlinks">
+                <li><a href="">Demos</a></li>
+                <li><a href="">Pages</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">Blocks</a></li>
+                <li><a href="">Elements</a></li>
+                <li><a href="">Extra</a></li>
+                <li><img src="./images/USA Logo.jpg" alt="countries">English</li>
+                <li><a href="">Contact Us</a></li>
+            </ol>
         </nav>
     </header>
     <main>
         <section class="welcome">
             <div class="begin">
-                <div>
-                    <a href="">Welcome to Sway</a>
-                    <a href="">Your partner for mobile and web products</a>
+                <div class="sway">
+                    <div class="sways">
+                        <div class="swa"><a href="">Welcome to Sway</a></div>
+                            <div class="part">Your partner for mobile and web products</div>
+                    </div>
                     <div>
                         We create digital journeys <span>opportunities</span><span>experiences</span>
                     </div>
                     <p>We have the knowledge and expertise in design and modern programming languages and platforms to help startups and growing companies build successful products.</p>
-                    <a href="">Get Started<i class='bx bx-chevron-right'></i></a>
+                    <a href="" id="get">Get Started<i class='bx bx-chevron-right'></i></a>
                 </div>
                 <div>
                     <div class="picture-background"></div>
@@ -63,22 +86,24 @@
         </section>
         <section class="craft">
             <h1>Crafting effective design and UX design</h1>
-            <p>We are a customer-first eCommerce agency, combining the best of UX design, technology and
+            <p class="laptop2">We are a customer-first eCommerce agency, combining the best of UX design, technology and <br>
             analytics to create sites that shoppers love and retention tactics that keep them coming back</p>
+            <p class="mobile2">We are a customer-first eCommerce agency, combining the best of UX design, technology and
+                analytics to create sites that shoppers love and retention tactics that keep them coming back</p>
             <div class="designs">
-                <div>
+                <div class="brand">
                     <img src="./images/branding.jpg" alt="">
                     <h2>Branding</h2>
                     <p>We create effective action plans and design optimal business strategies</p>
                     <a href="">Learn More</a>
                 </div>
-                <div>
+                <div class="brand">
                     <img src="./images/development.jpg" alt="">
                     <h2>Development</h2>
                     <p>We create effective action plans and design optimal business strategies</p>
                     <a href="">Learn More</a>
                 </div>
-                <div>
+                <div class="brand">
                     <img src="./images/strategy.jpg" alt="">
                     <h2>Strategy</h2>
                     <p>We create effective action plans and design optimal business strategies</p>
@@ -88,11 +113,13 @@
         </section>
         <section>
             <div class="video-part">
-                <div>
-                    <video controls>
-                    <source src="https://www.youtube.com/watch?v=sDwQBHN4jK0" type="video/mp4">
-                    <source src="https://www.youtube.com/watch?v=sDwQBHN4jK0" type="video/ogg">
-                </video>
+                <div class="video-wrapper">
+                    <div class="video-thumbnail" id="video-thumb">
+                        <img src="./images/digital-service3.jpg" alt="Video thumbnail">
+                        <div class="play-button"></div>
+                    </div>
+                    <iframe id="video-frame" src="" title="YouTube Video Player"
+                    framerborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div>
                     <p class="root">Successful creative is rooted in strategy</p>
@@ -108,7 +135,8 @@
             <div class="flex">
                 <div>
                     <p>Exclusive</p>
-                    <div><img src="./images/innovation.jpg" alt="box">Product & Business Innovation</div>
+                    <img src="./images/innovation.jpg" alt="innovation">
+                    <div>Product & Business Innovation</div>
                     <p>We create functional and intuitive interfaces and apps for desktop and mobile friendly platforms.</p>
                 </div>
                 <div>
@@ -141,15 +169,191 @@
             <a href=""><i class="bx bx-left-arrow-alt"></i></a>
             <a href=""><i class="bx bx-right-arrow-alt"></i></a>
         </section>
+        <section>
+            <div class="event">
+                <div>
+                    <p>The digital production of today and tomorrow</p>
+                    <h2>We work with you to realize <br>your next outstanding design</h2>
+                    <ul>
+                        <li>Our approach is designed to help the businesses</li>
+                        <li>We help founders and their teams build brands</li>
+                        <li>Online strategy and consulting services</li>
+                        <li>We collaborate with ambitious brands</li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="./images/event.jpg" alt="image">
+                    <img src="./images/meetings.jpg" alt="image">
+                    <img src="./images/sessions.jpg" alt="image">
+                    <br>
+                    <a href=""><i class="bx bx-left-arrow-alt"></i></a>
+                    <a href=""><i class="bx bx-right-arrow-alt"></i></a>
+                </div>
+            </div>
+        </section>
+        <div class="absolute">
+            <div>
+                <p class="rates">100+</p>
+                <p class="rate-names">Our Professional Team</p>
+            </div>
+            <div>
+                <p class="rates">20+</p>
+                <p class="rate-names">Years of Experience</p>
+            </div>
+            <div>
+                <p class="rates">150%</p>
+                <p class="rate-names">Fastest Growing Agency</p>
+            </div>
+            <div>
+                <p class="rates">4,200+</p>
+                <p class="rate-names">Happy Customers</p>
+            </div>
+        </div>
+        <section>
+            <div class="visit">
+                <div>
+                    <h2>We build digital brands and experiences</h2>
+                    <p>We love getting to be creative and work with awesome people, like you</p>
+                </div>
+                <div><a href="">Visit Our Work<i class='bx bx-chevron-right'></i></a></div>
+            </div>
+            <div class="images">
+                <div>
+                    <img src="./images/branding designs.jpg" alt="Stationery & Branding Designs" title="Stationery & Branding Designs">
+                    <br>
+                    <div><a href="">Stationery & Branding Designs<span><i class="bx bx-right-arrow-alt"></i></span></a></div>
+                </div>
+                <div>
+                    <img src="./images/landing.jpg" alt="Startups- Landing Template" title="Startups- Landing Template">
+                    <br>
+                    <div><a href="">Startups- Landing Template<span><i class="bx bx-right-arrow-alt"></i></span></a></div>
+                </div>
+                <div>
+                    <img src="./images/media service.jpg" alt="Showtracker Media-Services Provider" title="Showtracker Media-Services Provider">
+                    <br>
+                    <a href="">Showtracker Media-Services Provider<span><i class="bx bx-right-arrow-alt"></i></span></a>
+                </div>
+                <div>
+                    <img src="./images/home_main_portfolio_1.jpg" alt="Business Card Paper Mockup" title="Business Card Paper Mockup">
+                    <br>
+                    <a href="">Business Card Paper Mockup<span><i class="bx bx-right-arrow-alt"></i></span></a>
+                </div>
+            </div>
+        </section>
+        <section class="clients">
+            <h2>What our clients say is extremely important to us</h2>
+            <div class="customer">
+                <div>
+                    <img src="./images/review1.jpg" alt="review1">
+                    <p class="customer-review">You are so easy to work with and understand our aesthestic and direction so well.</p>
+                    <p class="emoji">I love Sway😍</p>
+                    <p class="customer-name">Vincent Smith<span>CEO at Ritmo</span></p>
+                </div>
+                <div>
+                    <img src="./images/review2.jpg" alt="review2">
+                    <p class="customer-review">You are so easy to work with and understand our aesthestic and direction so well.</p>
+                    <p class="emoji">Excellent team!!!🏆</p>
+                    <p class="customer-name">Monica Smith<span>Web Designer</span></p>
+                </div>
+                <div>
+                    <img src="" alt="">
+                    <p class="customer-review">You are so easy to work with and understand our aesthestic and direction so well.</p>
+                    <p class="emoji">Awesome work!💪</p>
+                    <p class="customer-name">Thomas Smith<span>Angel Investor</span></p>
+                </div>
+                <div>
+                    <img src="" alt="">
+                    <p class="customer-review">You are so easy to work with and understand our aesthestic and direction so well.</p>
+                    <p class="emoji">Awesome company!!😎</p>
+                    <p class="customer-name">Eloise Smith<span>UI/UX Developer</span></p>
+                </div>
+                <div>
+                    <img src="" alt="">
+                    <p class="customer-review">You are so easy to work with and understand our aesthestic and direction so well.</p>
+                    <p class="emoji">Excellent team!!🤗</p>
+                    <p class="customer-name">Ernest Smith<span>Senior Analyst</span></p>
+                </div>
+            </div>
+            <a href=""><i class="bx bx-left-arrow-alt"></i></a>
+            <a href=""><i class="bx bx-right-arrow-alt"></i></a>
+        </section>
+        <section class="final">
+            <h3>WE CUSTOM BUILD WEBSITES TO MAKE YOUR BRAND STAND OUT FROM THE NOISE</h3>
+            <h2>We start by listening and let that shape our <br>design process, with our clients as partners</h2>
+            <a href="">Contact Us<i class='bx bx-chevron-right'></i></a>
+        </section>
     </main>
+    <footer>
+        <div class="footer-header">
+            <div>
+                <ol>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Pricing Plans</a></li>
+                    <li><a href="">Privacy</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ol>
+            </div>
+            <div>
+                <li><a href=""><i class='bx bxl-facebook'></i></a></li>
+                <li><a href=""><i class='bx bxl-instagram'></i></a></li>
+                <li><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+            </div>
+        </div>
+        <div class="footer-main">
+            <div>
+                <h3>SWAY</h3>
+                <p>Our feet are on the ground, but our ambitions are above the clouds. Here is how we move from the getting to know you phase to creating something remarkable.</p>
+            </div>
+            <div>
+                <h3>About</h3>
+                <ul>
+                    <li><a href="">About Sway</a></li>
+                    <li><a href="">Plans & Pricing</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Products</h3>
+                <ul>
+                    <li><a href="">Primary blocks</a></li>
+                    <li><a href="">Content blocks</a></li>
+                    <li><a href="">Infographic blocks</a></li>
+                    <li><a href="">Business blocks</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="">Support Center</a></li>
+                    <li><a href="">Documentation</a></li>
+                    <li><a href="">Newsletter</a></li>
+                    <li><a href="">Changelog</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <p>New York. 112 W <br>34th St, Manhattan <br>(1) 212-445-4320</p>
+            </div>
+        </div>
+        <div class="bottom">
+            <div>© 2025 Sway by KeyDesign. All Rights Reserved.</div>
+            <div>
+                <a href="">Terms of Use</a>
+                <a href="">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
     <div class="fixed-icons">
         <div><a href=""><i class='bx bx-comment'></i></a><span class="one">Presale Chat</span></div>
-        <div><a href="https://keydesign.ticksy.com/"><img src="./images/ball.jpg" alt=""></a><span class="two">Submit Support Ticket</span></div>
+        <div><a href="https://keydesign.ticksy.com/"><i class="fa-solid fa-life-ring"></i></a><span class="two">Submit Support Ticket</span></div>
         <div><a href="https://www.swaytheme.com/documentation/"><i class='bx bx-file'></i></a><span class="three">Read Documentations</span></div>
         <div><a href="https://www.youtube.com/watch?v=xxFGIftx2ns&list=PLKM37Brx2eGA7BtA3O6R3HJOBXt9S3S50"><i class='bx bx-video'></i></a><span class="four">Watch Video Tutorials</span></div>
         <div><a href="https://www.swaytheme.com/showcase/"><i class='bx bx-heart'></i></a><span class="five">Customer Showcase</span></div>
         <div><a href="https://web.facebook.com/groups/354058971888447/"><i class='bx bx-group'></i></a><span class="six">Join User Community</span></div>
         <div><a href="https://themeforest.net/checkout/112144605/create_account?clickid=wa8QrnyqWxycTWJ26EQuh3jtUkpy7ZzlJyzHyM0&iradid=275988&iradtype=ONLINE_TRACKING_LINK&irgwc=1&irmptype=mediapartner&irpid=1330567&mp_value1=&utm_campaign=af_impact_radius_1330567&utm_medium=affiliate&utm_source=impact_radius"><i class='bx bx-cart'></i></a><span class="seven">Purchase Sway</span></div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
