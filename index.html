@@ -10,7 +10,10 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <title>Sway Branding Agency</title>
+    <title>Sway Branding Agency - Multi-Purpose WordPress Theme with Block Builder</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=toggle_off" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="welcome">
@@ -23,7 +26,7 @@
                 <div class="number2"><a href="https://www.swaytheme.com/branding-agency/#" target="_blank" id="twitt"><i class="fa-brands fa-x-twitter"></i></a></div>
             </div>
         <nav class="laptop">
-            <div class="logo">
+            <div class="logo" title="Sway Branding Agency">
                 SWAY
             </div>
             <ol>
@@ -41,7 +44,7 @@
             <div class="call"><a href="">Contact Us</a></div>
         </nav>
         <nav class="mobile">
-            <div class="logo">
+            <div class="logo" title="Sway Branding Agency">
                 SWAY
             </div>
             <div><a href=""><i class='bx bx-search'></i></a></div>
@@ -72,8 +75,13 @@
                         <div class="swa"><a href="">Welcome to Sway</a></div>
                             <div class="part">Your partner for mobile and web products</div>
                     </div>
-                    <div>
-                        We create digital journeys <span>opportunities</span><span>experiences</span>
+                    <div class="wrapper">
+                        <div class="static-text">We create digital </div>
+                        <ul class="dynamic-text">
+                            <li><span>journeys</span></li>
+                            <li><span>opportunities</span></li>
+                            <li><span>experiences</span></li>
+                        </ul>
                     </div>
                     <p>We have the knowledge and expertise in design and modern programming languages and platforms to help startups and growing companies build successful products.</p>
                     <a href="" id="get">Get Started<i class='bx bx-chevron-right'></i></a>
@@ -111,83 +119,101 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="welcome">
             <div class="video-part">
                 <div class="video-wrapper">
                     <div class="video-thumbnail" id="video-thumb">
                         <img src="./images/digital-service3.jpg" alt="Video thumbnail">
-                        <div class="play-button"></div>
+                        <div class="play-button"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#767de7" class="play">
+                            <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                        </svg></div>
                     </div>
                     <iframe id="video-frame" src="" title="YouTube Video Player"
                     framerborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <div>
+                <div class="bring">
                     <p class="root">Successful creative is rooted in strategy</p>
-                    <h1>We partner with companies to bring clarity to their brand</h1>
+                    <h1 class="clarity">We partner with companies to bring clarity to their brand</h1>
                     <p class="enjoy">We develop enjoyable consumer experiences, from digital strategy and content to media and analysis. Leading to meaningful results and satisfied clients.</p>
-                    <a href="">Our Process<i class='bx bx-chevron-right'></i></a>
+                    <a href="" id="our">Our Process<i class='bx bx-chevron-right'></i></a>
                 </div>
             </div>
         </section>
         <section class="first">
              <h1>A founder-first branding agency</h1>
-            <p>We believe scaling startups require a radically different kind of agency</p>
-            <div class="flex">
-                <div>
-                    <p>Exclusive</p>
-                    <img src="./images/innovation.jpg" alt="innovation">
-                    <div>Product & Business Innovation</div>
-                    <p>We create functional and intuitive interfaces and apps for desktop and mobile friendly platforms.</p>
+            <p class="scale">We believe scaling startups require a radically different kind of agency</p>
+            <div class="grid">
+                <div class="grid2">
+                    <p class="Exclusive">Exclusive</p>
+                    <div><img src="./images/innovation.png" alt="innovation"> <span>Product & Business Innovation</span></div>
+                    <p class="create2">We create functional and intuitive interfaces and apps for desktop and mobile friendly platforms.</p>
                 </div>
-                <div>
-                    <p>Essential</p>
-                    <div><img src="./images/marketing.jpg" alt="marketing">Marketing Strategy</div>
-                    <p>We create functional and intuitive interfaces and apps for desktop and mobile friendly platforms.</p>
+                <div class="grid3">
+                    <p class="Exclusive">Essential</p>
+                    <div><img src="./images/marketing.png" alt="marketing"><span>Marketing Strategy</span></div>
+                    <p class="create">We create functional and intuitive interfaces and apps for desktop and mobile friendly platforms.</p>
                 </div>
-                <div>
-                    <p>Essential</p>
-                    <div><img src="./images/audit.jpg" alt="audit">Brand Audit & Discovery</div>
-                    <p>We create functional and intuitive interfaces and apps for desktop and mobile friendly platforms.</p>
+                <div class="grid2">
+                    <p class="Exclusive">Essential</p>
+                    <div><img src="./images/audit.png" alt="audit"><span>Brand Audit & Discovery</span></div>
+                    <p class="create2">We create functional and intuitive interfaces and apps for desktop and mobile friendly platforms.</p>
                 </div>
-                <div>
-                    <p>Exclusive</p>
-                    <div><img src="./images/ux design.jpg" alt="Ux design">User Experience Design</div>
-                    <p>We create functional and intuitive interfaces and apps for desktop and mobile friendly platforms.</p>
+                <div class="grid3">
+                    <p class="Exclusive">Exclusive</p>
+                    <div><img src="./images/ux design.png" alt="Ux design"><span>User Experience Design</span></div>
+                    <p class="create">We create functional and intuitive interfaces and apps for desktop and mobile friendly platforms.</p>
                 </div>
             </div>
         </section>
         <section class="support">
             <h3>TRUSTED BY FORWARD-THINKING SOFTWARE TEAMS AROUND THE WORLD</h3>
-            <div class="flex">
-                <div><img src="./images/mark.jpg" alt="nike"></div>
-                <div><img src="./images/spotify.jpg" alt="spotify"></div>
-                <div><img src="./images/google.jpg" alt="google"></div>
-                <div><img src="./images/apple.jpg" alt="apple"></div>
-                <div><img src="./images/amazon.jpg" alt="amazon"></div>
-                <div><img src="./images/air.jpg" alt="airbnb"></div>
+            <div class="flex" id="flex">
+                <div class="image-wrapper">
+                    <img src="./images/mark.png" alt="nike">
+                </div>
+                <div class="image-wrapper">
+                    <img src="./images/spotify.png" alt="spotify">
+                </div>
+                <div class="image-wrapper">
+                    <img src="./images/google.png" alt="google">
+                </div>
+                <div class="image-wrapper">
+                    <img src="./images/apple.png" alt="apple">
+                </div>
+                <div class="image-wrapper">
+                    <img src="./images/amazon.png" alt="amazon" id="amazon">
+                </div>
+                <div class="image-wrapper">
+                    <img src="./images/air.png" alt="airbnb">
+                </div>
             </div>
-            <a href=""><i class="bx bx-left-arrow-alt"></i></a>
-            <a href=""><i class="bx bx-right-arrow-alt"></i></a>
+            <div class="arrow">
+                <a href="#left" id="left"><i class="bx bx-left-arrow-alt"></i></a>
+                <a href="#right" id="right"><i class="bx bx-right-arrow-alt"></i></a>
+            </div>
         </section>
-        <section>
+        <section class="welcome">
             <div class="event">
-                <div>
+                <div class="eventss">
                     <p>The digital production of today and tomorrow</p>
-                    <h2>We work with you to realize <br>your next outstanding design</h2>
+                    <h1>We work with you to realize your next outstanding design</h1>
                     <ul>
-                        <li>Our approach is designed to help the businesses</li>
-                        <li>We help founders and their teams build brands</li>
-                        <li>Online strategy and consulting services</li>
-                        <li>We collaborate with ambitious brands</li>
+                        <li><img src="./images/good.jpg" alt="good">Our approach is designed to help the businesses</li>
+                        <li><img src="./images/good.jpg" alt="good">We help founders and their teams build brands</li>
+                        <li> <img src="./images/good.jpg" alt="good">Online strategy and consulting services</li>
+                        <li> <img src="./images/good.jpg" alt="good">We collaborate with ambitious brands</li>
                     </ul>
                 </div>
-                <div>
-                    <img src="./images/event.jpg" alt="image">
-                    <img src="./images/meetings.jpg" alt="image">
-                    <img src="./images/sessions.jpg" alt="image">
-                    <br>
-                    <a href=""><i class="bx bx-left-arrow-alt"></i></a>
-                    <a href=""><i class="bx bx-right-arrow-alt"></i></a>
+                <div class="carousel-container">
+                    <div class="meet" id="carouselTrack">
+                        <div class="slide"><img src="./images/event.jpg" alt="image"></div>
+                        <div class="slide"><img src="./images/meetings.jpg" alt="image"></div>
+                        <div class="slide"><img src="./images/sessions.jpg" alt="image"></div>
+                        </div>
+                        <div class="arrow">
+                            <button onclick="moveSlide(-1); return false;"><i class="bx bx-left-arrow-alt"></i></button>
+                            <button onclick="moveSlide(1); return false;"><i class="bx bx-right-arrow-alt"></i></button>
+                        </div>
                 </div>
             </div>
         </section>
@@ -201,21 +227,21 @@
                 <p class="rate-names">Years of Experience</p>
             </div>
             <div>
-                <p class="rates">150%</p>
+                <p class="rates" id="five">150%</p>
                 <p class="rate-names">Fastest Growing Agency</p>
             </div>
             <div>
-                <p class="rates">4,200+</p>
+                <p class="rates" id="four">4,200+</p>
                 <p class="rate-names">Happy Customers</p>
             </div>
         </div>
         <section>
             <div class="visit">
-                <div>
+                <div class="digital">
                     <h2>We build digital brands and experiences</h2>
                     <p>We love getting to be creative and work with awesome people, like you</p>
                 </div>
-                <div><a href="">Visit Our Work<i class='bx bx-chevron-right'></i></a></div>
+                <div id="visit"><a href="">Visit Our Work<i class='bx bx-chevron-right'></i></a></div>
             </div>
             <div class="images">
                 <div>
@@ -231,12 +257,14 @@
                 <div>
                     <img src="./images/media service.jpg" alt="Showtracker Media-Services Provider" title="Showtracker Media-Services Provider">
                     <br>
+                    <div>
                     <a href="">Showtracker Media-Services Provider<span><i class="bx bx-right-arrow-alt"></i></span></a>
+                    </div>
                 </div>
                 <div>
                     <img src="./images/home_main_portfolio_1.jpg" alt="Business Card Paper Mockup" title="Business Card Paper Mockup">
                     <br>
-                    <a href="">Business Card Paper Mockup<span><i class="bx bx-right-arrow-alt"></i></span></a>
+                    <div><a href="">Business Card Paper Mockup<span><i class="bx bx-right-arrow-alt"></i></span></a></div>
                 </div>
             </div>
         </section>
@@ -256,26 +284,28 @@
                     <p class="customer-name">Monica Smith<span>Web Designer</span></p>
                 </div>
                 <div>
-                    <img src="" alt="">
+                    <img src="./images/review3.jpg" alt="review3">
                     <p class="customer-review">You are so easy to work with and understand our aesthestic and direction so well.</p>
                     <p class="emoji">Awesome work!💪</p>
                     <p class="customer-name">Thomas Smith<span>Angel Investor</span></p>
                 </div>
                 <div>
-                    <img src="" alt="">
+                    <img src="./images/review5.jpg" alt="review5">
                     <p class="customer-review">You are so easy to work with and understand our aesthestic and direction so well.</p>
                     <p class="emoji">Awesome company!!😎</p>
                     <p class="customer-name">Eloise Smith<span>UI/UX Developer</span></p>
                 </div>
                 <div>
-                    <img src="" alt="">
+                    <img src="./images/review6.jpg" alt="review6">
                     <p class="customer-review">You are so easy to work with and understand our aesthestic and direction so well.</p>
                     <p class="emoji">Excellent team!!🤗</p>
                     <p class="customer-name">Ernest Smith<span>Senior Analyst</span></p>
                 </div>
             </div>
-            <a href=""><i class="bx bx-left-arrow-alt"></i></a>
-            <a href=""><i class="bx bx-right-arrow-alt"></i></a>
+            <div class="arrow">
+                <a href=""><i class="bx bx-left-arrow-alt"></i></a>
+                <a href=""><i class="bx bx-right-arrow-alt"></i></a>
+            </div>
         </section>
         <section class="final">
             <h3>WE CUSTOM BUILD WEBSITES TO MAKE YOUR BRAND STAND OUT FROM THE NOISE</h3>

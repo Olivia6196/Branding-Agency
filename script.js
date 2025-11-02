@@ -22,3 +22,27 @@ if (thumb && frame) {
     console.error('❌ Elements not found!');
 };
 
+// const flex =
+// document.getElementById('flex');
+// const left = document.getElementById('left');
+// const right = document.getElementById('right');
+
+// right.addEventListener('click', (e) => {flex.scrollBy({left:200, behaviour:'smooth' })});
+// left.addEventListener('click', (e) => {flex.scrollBy({left:-200, behaviour:'smooth'})});
+
+const track =
+document.getElementById('carouselTrack')
+if (track) {
+    const slide =
+    track.querySelectorAll('.slide');
+    const totalSlide = slide.length;
+    let currentSlide = 0;
+function moveSlide(direction) {
+        if (currentSlide < 0){
+            currentSlide = totalSlide - 1; }
+            else if (currentSlide >= totalSlide){currentSlide = 0}
+    const offset = -currentSlide * 100;
+    track.style.transform = `translateX(${offset}%)`;
+    window.moveSlide = moveSlide; }
+    else { console.error("carousel track element with ID 'carouselTrack' not found"); }
+        } 
