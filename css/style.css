@@ -131,22 +131,6 @@
   z-index: 1;
   transition: color 0.4s ease-in-out;
 }
-/* .call::before{
-   content: "";
-   position: absolute;
-   inset: 0;
-   height: 100%;
-   transform: scaleX(0);
-   background-color: #767de7;
-   z-index: 0;
-   transition: transform 0.4s ease-in-out;
-}
-.call:hover::before{
-   transform: scaleX(1);
-}
-.call:hover{
-   color: white;
-} */
 .hamburger {
    display: none;
    flex-direction: column;
@@ -892,7 +876,10 @@ button{
    padding-bottom: 2vw;
    color: white;
 }
-.final h2{
+ .lets {
+    display: none;
+ }
+.let{
    font-size: 2.7rem;
    line-height: 1.5;
    color: white;
@@ -1163,7 +1150,7 @@ footer{
                flex-direction: column;
                gap: 2.5vw;
                padding: 1.2vw 0;
-               margin-left: 5vw;
+               padding-left: 5vw;
                box-shadow: 0 0 20px #dad9d9;
             }
       
@@ -1280,7 +1267,6 @@ footer{
          right: -1vw;
          top: 71.83vw;
          height: 82vw;
-         width: 80.5;
       }
    
    
@@ -1939,7 +1925,10 @@ footer{
          color: white;
       }
    
-      .final h2 {
+             .lets {
+                display: none;
+             }
+      .let{
          font-size: 1.7rem;
          line-height: 1.5;
          color: white;
@@ -2080,11 +2069,6 @@ footer{
    .welcome {
       width: 100%;
    }
-
-   .top {
-      display: none;
-   }
-
    .fixed-top {
       position: fixed;
       width: 100%;
@@ -2092,20 +2076,15 @@ footer{
    }
 
    .top2 {
-      display: flex;
-      border: 0.1vw solid #dbdbdb;
-      padding-left: 4.5vw;
-      height: 5vw;
-      background-color: white;
+      padding-left: 3vw;
+      height: 8vw;
       width: 100%;
-      cursor: pointer;
    }
 
    .num {
       padding-top: 2vw;
-      font-size: 0.88rem;
-      color: black;
-      margin-right: 1.5vw;
+      font-size: 0.97rem;
+      margin-right: 1.8vw;
    }
 
    .number {
@@ -2113,20 +2092,22 @@ footer{
       padding: 0.6vw 1.8vw 1.5vw;
       font-size: 0.85rem;
       position: relative;
-      top: 0.8vw;
+      top: 1vw;
       font-weight: 500;
    }
 
    .number2 {
       border-left: 0.1vw solid #dbdbdb;
       border-right: 0.1vw solid #dbdbdb;
-      padding: 1.1vw 1.8vw 0.2vw;
+      padding: 1.8vw 1.8vw 0.2vw;
       font-size: 0.85rem;
    }
 
    #why {
-      margin-right: 45vw;
-      font-weight: 200;
+      display: none;
+   }
+   #help{
+      margin-right: 33.5vw;
    }
 
    .top2 p a {
@@ -2160,11 +2141,11 @@ footer{
    }
 
    .logo {
-      padding-left: 5vw;
+      padding-left: 3vw;
       padding-right: 14vw;
       padding-top: 2.3vw;
       padding-bottom: 2.3vw;
-      font-size: 1.2rem;
+      font-size: 1rem;
       font-weight: 700;
       letter-spacing: 0.1vw;
       color: #000000a9;
@@ -2172,11 +2153,11 @@ footer{
    }
 
    .bx-search {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       color: #020202a9;
       position: absolute;
-      top: 8vw;
-      left: 87vw;
+      top: 11.5vw;
+      left: 82vw;
 
    }
 
@@ -2188,8 +2169,8 @@ footer{
       display: none;
       flex-direction: column;
       gap: 2.5vw;
-      padding: 1.2vw 0;
-      margin-left: 5vw;
+      padding: 1.7vw 0;
+      padding-left: 5vw;
       box-shadow: 0 0 20px #dad9d9;
    }
 
@@ -2199,17 +2180,30 @@ footer{
 
    .hamburger {
       display: flex;
+      right: 7vw;
+      margin-top: -6vw;
    }
+   .hamburger span{
+      height: 0.2vw;
+      width: 5vw;
+      margin-bottom: 0.7vw;
+   }
+.hamburger.active span:nth-child(1) {
+   transform: rotate(45deg) translate(0.6vw, 1.27vw);
+}
 
+.hamburger.active span:nth-child(3) {
+   transform: rotate(-45deg) translate(0.6vw, -1.27vw);
+}
    .navlinks .calls a {
       text-decoration: none;
       font-size: 0.99rem;
       color: #767ee7b7;
       font-weight: 550;
       border: 0.14vw solid #767de7;
-      padding: 0.9vw 38vw;
+      padding: 1.5vw 35vw;
       position: relative;
-      border-radius: 0.35vw;
+      border-radius: 1vw;
       display: inline-block;
       overflow: hidden;
       z-index: 1;
@@ -2223,40 +2217,43 @@ footer{
       padding-left: 5vw;
       padding-right: 5vw;
       padding-top: 8vw;
-      padding-bottom: 8vw;
+      padding-bottom: 18vw;
    }
 
    .sway {
       padding-top: 22vw;
-      padding-bottom: 3vw;
+      padding-bottom: 5vw;
    }
 
    .sways {
       display: flex;
+      flex-direction: column;
       position: relative;
       padding: 1.3vw 0;
+      gap: 1.5vw;
    }
 
    .part {
       background-color: #e0e5f9;
       border: 0.1vw solid #e0e5f9;
-      padding: 0.6vw 1.5vw 0.5vw;
-      padding-left: 3.5vw;
+      padding: 1.2vw 2.5vw ;
       border-radius: 5vw;
       color: #767de7;
       font-size: 0.94rem;
+      width: 70vw;
       font-weight: 500;
-      margin-left: 17vw;
+      margin-left: 0;
    }
 
    .swa {
       text-decoration: none;
       background-color: #767de7;
       border: 0.1vw solid #767de7;
-      padding: 0.6vw 1vw;
+      padding: 1.2vw 2.5vw;
       border-radius: 5vw;
       font-size: 0.95rem;
-      position: absolute;
+      width: 30vw;
+      position: relative;
       left: 0.1vw;
    }
 
@@ -2266,48 +2263,50 @@ footer{
    }
 
    .begin p {
-      width: 88vw;
+      width: 90vw;
       line-height: 1.8;
-      padding-bottom: 4vw;
-      margin-top: -5vw;
+      padding-bottom: 8vw;
+      margin-top: 1vw;
       font-weight: 500;
       font-size: 1rem;
       color: #60606bd7;
    }
 
    .static-text {
-      padding-top: 2vw;
-      font-size: 2.1rem;
+      padding-top: 4vw;
+      padding-bottom: 1vw;
+      font-size: 2rem;
+      line-height: 1.5;
       font-weight: 650;
       opacity: 0.8;
       position: relative;
-      overflow: visible;
+      overflow: -moz-hidden-unscrollable;
    }
 
    .slider {
       position: relative;
-      left: 37.6vw;
-      top: -5.4vw;
+      left: 0;
+      top: 0.4vw;
       height: 48px;
       overflow: hidden;
    }
 
    .picture-background {
       background-color: #767de7;
-      width: 67vw;
-      height: 77vw;
+      width: 86vw;
+      height: 95vw;
       border-radius: 2vw;
       position: relative;
-      left: 13vw;
-      margin-top: 5.5vw;
+      left: 2vw;
+      margin-top: 10.5vw;
    }
 
    .begin img {
       position: absolute;
-      right: -1vw;
-      top: 71.83vw;
-      height: 82vw;
-      width: 80.5;
+      right: -4vw;
+      top: 132.1vw;
+      height: 105vw;
+      width: 96.5vw;
    }
 
 
@@ -2318,20 +2317,20 @@ footer{
       background-color: #767de7;
       font-weight: 550;
       border: 0.14vw solid #767de7;
-      padding: 2.2vw 3.5vw;
+      padding: 3.8vw 4.5vw;
       border-radius: 1vw;
    }
 
    .bx-chevron-right {
       font-size: 1.7rem;
       position: relative;
-      top: 0.9vw;
+      top: 1.8vw;
    }
 
    .craft h1 {
       text-align: center;
-      padding-top: 8vw;
-      font-size: 1.7rem;
+      padding: 12vw 4vw 0;
+      font-size: 1.68rem;
       color: #000000d8;
       font-weight: 650;
    }
@@ -2346,6 +2345,7 @@ footer{
       width: 88vw;
       text-align: center;
       padding-top: 2.5vw;
+      padding-bottom: 3vw;
       font-size: 0.9rem;
       line-height: 1.8;
       opacity: 0.8;
@@ -2355,31 +2355,36 @@ footer{
 
    .designs {
       display: flex;
+      flex-direction: column;
       justify-content: center;
-      gap: 2.8vw;
+      gap: 4.8vw;
       text-align: center;
       padding-top: 5.5vw;
-      padding-bottom: 9.5vw;
+      padding-left: 5.5vw;
+      padding-bottom: 14.5vw;
+      width: 88vw;
    }
 
    .designs p {
-      width: 24vw;
-      font-size: 0.9rem;
+      width: 80vw;
+      font-size: 0.98rem;
       color: #000000ce;
       line-height: 1.5;
       font-weight: 500;
-      padding-bottom: 3vw;
+      padding-bottom: 5.5vw;
+      padding-left: 1.4vw;
+      padding-top: 3vw;
    }
 
    .brand {
       border: 0.1vw solid #e0e0e0;
-      padding: 3vw 2.2vw 3.5vw;
-      border-radius: 0.45vw;
+      padding: 7vw 2.2vw 8vw;
+      border-radius: 1.5vw;
    }
 
    .brand img {
       border-radius: 0.4vw;
-      padding-bottom: 3vw;
+      padding-bottom: 6.5vw;
    }
 
    .brand h2 {
@@ -2387,25 +2392,6 @@ footer{
       color: #000000d7;
       padding-bottom: 2vw;
    }
-
-   .brand a {
-      text-decoration: none;
-      color: #464545a1;
-      font-size: 0.95rem;
-      font-weight: 550;
-   }
-
-   .brand:hover {
-      background-color: white;
-      border: 0.1vw solid white;
-      box-shadow: 0 -8px 25px #dad9d9;
-   }
-
-   .brand:hover a {
-      color: #767de7;
-   }
-
-
    .video-wrapper {
       position: relative;
       width: 110vw;
@@ -2429,51 +2415,20 @@ footer{
    .play-button {
       position: absolute;
       top: 50%;
-      left: 40%;
+      left: 42%;
       background: #ffffffd8;
       border: 0.2vw solid #ffffffcc;
-      padding: 5vw;
+      padding: 7vw;
       border-radius: 50%;
       transform: translate(-50%, -50%);
       transition: 0.5s ease-in-out;
    }
-
-   .play-button::after {
-      position: absolute;
-      top: 50%;
-      left: 55%;
-      transform: translate(-50%, -50%);
-      width: 0;
-      height: 0;
-      border-left: 0.8vw solid black;
-      border-top: 0.5vw solid transparent;
-      border-bottom: 0.5vw solid transparent;
-   }
-
-   iframe {
-      display: none;
-      width: 100%;
-      height: 40vw;
-      border: none;
-      border-radius: 0.9vw;
-   }
-
-   .play-button:hover {
-      background: transparent;
-      border: 0.3vw solid white;
-      box-shadow: 0 0 20px solid white;
-   }
-
-   .play-button:hover .play {
-      fill: white;
-   }
-
    .video-part {
       display: flex;
       flex-direction: column;
       gap: 10vw;
       padding-bottom: 8.5vw;
-      padding-top: 8vw;
+      padding-top: 20vw;
    }
 
    #our {
@@ -2483,15 +2438,15 @@ footer{
       background-color: #767de7;
       font-weight: 550;
       border: 0.14vw solid #767de7;
-      padding: 2vw 2.5vw;
-      border-radius: 1vw;
+      padding: 3.8vw 5vw;
+      border-radius: 1.5vw;
    }
 
    .root {
       background-color: #e2e4fd;
       color: #767de7;
-      width: 37vw;
-      padding: 0.8vw 1.2vw;
+      width: 73vw;
+      padding: 0.8vw 2vw;
       border-radius: 5vw;
       font-size: 0.9rem;
       font-weight: 500;
@@ -2502,20 +2457,21 @@ footer{
    .bring {
       padding-right: 5vw;
       padding-left: 5vw;
-      padding-bottom: 2vw;
+      padding-bottom: 12vw;
    }
 
    .clarity {
       color: #000000c4;
       line-height: 1.5;
-      padding-bottom: 2vw;
+      padding-top: 2vw;
+      padding-bottom: 3vw;
       font-size: 1.8rem;
-      width: 60vw;
+      width: 88vw;
    }
 
    .enjoy {
-      font-size: 0.94rem;
-      line-height: 1.5;
+      font-size: 1rem;
+      line-height: 1.8;
       color: #60606bd7;
       font-weight: 500;
       width: 88vw;
@@ -2524,8 +2480,8 @@ footer{
 
    .first h1 {
       text-align: center;
-      padding-top: 8vw;
-      font-size: 1.7rem;
+      font-size: 1.6rem;
+      padding:10vw 5vw 0;
       color: #000000d8;
       font-weight: 650;
    }
@@ -2544,38 +2500,42 @@ footer{
       background-color: white;
       font-size: 0.9rem;
       font-weight: 500;
-      width: 8.8vw;
-      padding: 0.8vw 1.5vw;
-      border-radius: 5vw;
-      margin-left: 25vw;
+      width: 15vw;
+      padding: 1.8vw 3vw;
+      border-radius: 6vw;
+      margin-left: 60vw;
    }
 
    .grid {
       display: grid;
       gap: 3.5vw;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
       padding-bottom: 7vw;
-      padding-top: 3.5vw;
+      padding-top: 5.5vw;
       position: relative;
    }
 
    .grid2 {
-      margin-left: 5.5vw;
+      margin-left: 5vw;
+      margin-right: 5vw;
       border: 0.1vw solid #767de7;
       background-color: #767de7;
       color: white;
-      padding: 1.8vw 3vw 2.5vw;
+      padding: 3.5vw 7vw 4.5vw;
       box-shadow: 0 0 40px #dbdbdb;
+      border-radius: 1.5vw;
       transition: 0.3s ease-in-out;
    }
 
    .grid3 {
-      margin-right: 5.5vw;
+      margin-right: 5vw;
+      margin-left: 5vw;
       color: white;
       border: 0.1vw solid #767de7;
       background-color: #767de7;
-      padding: 1.8vw 3vw 2.5vw;
+      padding: 3.5vw 7vw 4.5vw;
       box-shadow: 0 0 40px #dbdbdb;
+      border-radius: 1.5vw;
       transition: 0.3s ease-in-out;
    }
 
@@ -2583,75 +2543,29 @@ footer{
       padding-left: 0;
       line-height: 1.5;
       font-size: 1.08rem;
-      width: 38vw;
+      width: 80vw;
    }
 
    .create2 {
       padding-left: 0;
       line-height: 1.5;
       font-size: 1.08rem;
-      width: 38vw;
+      width: 80vw;
    }
 
    .grid span {
       display: none;
    }
-
-   .mobiles {
-      display: block;
-      font-size: 1.15rem;
-      font-weight: 600;
-      line-height: 1.5;
-      padding-bottom: 2vw;
-   }
-
-   .grid img {
-      margin-right: 1.8vw;
-      position: relative;
-      top: 0;
-      filter: brightness(0) invert(1);
-      overflow: hidden;
-   }
-
-   .grid2:hover .Exclusive {
-      background-color: #f7f9ff;
-   }
-
-   .grid3:hover .Exclusive {
-      background-color: #f7f9ff;
-   }
-
-   .grid2:hover {
-      color: black;
-      background-color: white;
-      border: 0.1vw solid #fdfeff;
-   }
-
-   .grid3:hover {
-      color: black;
-      background-color: white;
-      border: 0.1vw solid #fdfeff;
-   }
-
-   .grid2:hover img {
-      filter: brightness(100%) invert(0);
-   }
-
-   .grid3:hover img {
-      filter: brightness(100%) invert(0);
-   }
-
-
    .support {
-      padding-bottom: 5vw;
+      padding-bottom: 9vw;
    }
 
    .support h3 {
       text-align: center;
-      padding-top: 9.5vw;
+      padding: 18.5vw 5vw 0;
       font-weight: 400;
       font-size: 1rem;
-      padding-bottom: 4.5vw;
+      padding-bottom: 6.5vw;
    }
 
    .flex {
@@ -2661,33 +2575,12 @@ footer{
    .flexs {
       display: flex;
       justify-content: center;
-      gap: 8vw;
+      gap: 4vw;
    }
 
    .arrow {
       text-align: center;
-      margin-top: 3vw;
-   }
-
-   .arrow .bx-left-arrow-alt {
-      font-size: 1.5rem;
-      border: 0.1vw solid #e9ecfa;
-      background-color: #e9ecfa;
-      padding: 0.8vw 0.9vw;
-      color: #767de7;
-      border-radius: 1vw;
-      margin-right: 0.5vw;
-      transition: 0.3s;
-   }
-
-   .arrow .bx-right-arrow-alt {
-      font-size: 1.5rem;
-      color: #767de7;
-      border: 0.1vw solid #e9ecfa;
-      background-color: #e9ecfa;
-      padding: 0.8vw 0.9vw;
-      border-radius: 1vw;
-      transition: 0.3s;
+      margin-top: 4vw;
    }
 
    .event {
@@ -2695,7 +2588,7 @@ footer{
       flex-direction: column;
       gap: 8vw;
       padding-top: 7vw;
-      padding-bottom: 15vw;
+      padding-bottom: 35vw;
    }
 
    .eventss {
@@ -2707,31 +2600,33 @@ footer{
    .event p {
       color: #767de7;
       background-color: #e0e5f9;
-      padding: 0.5vw 1.5vw;
-      width: 44vw;
+      padding: 1.5vw 2.5vw;
+      width: 82vw;
       font-size: 0.97rem;
       font-weight: 400;
       border-radius: 5vw;
    }
 
    .event h1 {
-      padding-top: 2.2vw;
-      width: 55vw;
+      padding-top: 4.2vw;
+      width: 85vw;
       font-size: 1.7rem;
       line-height: 1.5;
       color: #000000c0;
-      padding-bottom: 4.5vw;
+      padding-bottom: 7.5vw;
    }
 
-   .event ul {
-      width: 60vw;
-      line-height: 2.4;
-      font-size: 1.1rem;
+   .event ul{
+      width: 85vw;
+      line-height: 1.5;
+      font-size: 1rem;
    }
-
+   .event ul li{
+      padding-bottom: 3vw;
+   }
    .event ul img {
       position: relative;
-      top: 0.4vw;
+      top: 0.7vw;
       margin-right: 0.8vw;
    }
 
@@ -2743,9 +2638,9 @@ footer{
    .meet {
       padding-right: 5vw;
       display: flex;
-      gap: 5vw;
-      width: 420%;
-      padding-left: 8vw;
+      gap: 12vw;
+      width: 240%;
+      padding-left: 10vw;
       transition: transform 0.5s ease-in-out;
       transform: translateX(0);
    }
@@ -2764,18 +2659,20 @@ footer{
 
    .absolute {
       display: flex;
-      gap: 5vw;
+      flex-direction: column;
+      gap: 8vw;
       justify-content: center;
-      margin-left: 5vw;
+      margin-left: 8.5vw;
       margin-right: 4vw;
       border: 0.1vw solid #fcfbfb;
       background-color: white;
-      padding: 3vw 0;
+      padding: 7vw 0;
       padding-left: 1.5vw;
       padding-right: 4.8vw;
       border-radius: 0.5vw;
       position: absolute;
-      top: 638vw;
+      width: 77vw;
+      top: 1300vw;
       box-shadow: 1px 5px 25px #dbdbdb;
    }
 
@@ -2806,7 +2703,7 @@ footer{
    .visit {
       display: flex;
       flex-direction: column;
-      padding-top: 20vw;
+      padding-top: 98vw;
       position: relative;
    }
 
@@ -2816,53 +2713,55 @@ footer{
       color: #767ee7b7;
       font-weight: 550;
       border: 0.14vw solid #767de7;
-      padding: 1.2vw 3vw 2vw;
-      border-radius: 1vw;
-      position: absolute;
-      left: 72vw;
-      top: 24.2vw;
+      padding: 4vw 4.7vw;
+      border-radius: 1.5vw;
+      position: relative;
+      left: 9.6vw;
+      top: 0;
    }
 
    #visit {
-      padding-top: 2vw;
+      margin-top: -8vw;
       padding-bottom: 5vw;
    }
 
    .digital {
-      padding-left: 5.6vw;
+      padding-left: 9.6vw;
    }
 
    .digital h2 {
       font-size: 1.8rem;
-      padding-bottom: 1.8vw;
-      width: 55vw;
+      padding-bottom: 4vw;
+      width: 75vw;
+      line-height: 1.5;
       opacity: 0.9;
    }
 
    .digital p {
-      font-size: 1.06rem;
-      width: 68vw;
+      font-size: 1rem;
+      width: 88vw;
       font-weight: 500;
+      line-height: 1.5;
       opacity: 0.7;
    }
 
    .images {
       display: flex;
       justify-content: center;
-      gap: 2vw;
+      gap: 12vw;
       flex-wrap: wrap;
-      margin-top: -18vw;
-      padding-bottom: 12vw;
+      margin-top: 8vw;
+      padding-bottom: 20vw;
    }
 
    .images img {
-      padding-bottom: 1.5vw;
-      width: 45vw;
-      height: 45vw;
+      padding-bottom: 2.5vw;
+      width: 85vw;
+      height: 82vw;
    }
 
    .border-bottom {
-      border-bottom: 0.3vw solid #767de7;
+      border-bottom: 1vw solid #767de7;
       padding-bottom: 0.4vw;
    }
 
@@ -2873,14 +2772,16 @@ footer{
       display: none;
       transition: 0.2s ease-in-out;
    }
-
+   .start a{
+      font-size: 1.2rem;
+   }
    .stay {
-      padding-bottom: 1vw;
+      padding-bottom: 2vw;
    }
 
    .start:hover a {
       color: #767de7;
-      border-bottom: 0.3vw solid #767de7;
+      border-bottom: 1vw solid #767de7;
    }
 
    .start:hover .bx-right-arrow-alt {
@@ -2888,19 +2789,22 @@ footer{
    }
 
    .clients {
-      padding-top: 10vw;
+      padding-top: 18vw;
       text-align: center;
       font-size: 1.7rem;
       opacity: 0.8;
-      padding-bottom: 4.8vw;
+      padding-bottom: 6.8vw;
    }
 
    .review {
       border: 0.1vw solid #eaeaea;
-      padding: 5vw 3.5vw;
+      padding: 8vw 5.5vw;
       background-color: white;
       margin-bottom: 3vw;
-      width: 37vw;
+      width: 80vw;
+   }
+   #easy{
+      display: none;
    }
 
    .customers {
@@ -2908,6 +2812,7 @@ footer{
       flex-wrap: wrap;
       justify-content: center;
       gap: 4.5vw;
+      padding-bottom: 5vw;
       text-align: center;
    }
 
@@ -2916,7 +2821,7 @@ footer{
    }
 
    #say {
-      padding-bottom: 6vw;
+      padding-bottom: 16vw;
    }
 
    .review p {
@@ -2924,21 +2829,21 @@ footer{
    }
 
    .customer-review {
-      width: 40vw;
-      padding-top: 1.5vw;
+      width: 80vw;
+      padding-top: 3.5vw;
       font-size: 0.95rem;
       line-height: 1.5;
-      padding-bottom: 1.5vw;
+      padding-bottom: 3.5vw;
    }
 
    .emoji {
       font-size: 0.95rem;
-      padding-bottom: 1.6vw;
+      padding-bottom: 3.6vw;
       border-bottom: 0.1vw solid #dbdbdb;
    }
 
    .customer-name {
-      padding-top: 2vw;
+      padding-top: 3vw;
       color: #767de7;
       font-size: 0.98rem;
       font-weight: 500;
@@ -2951,33 +2856,37 @@ footer{
       font-size: 0.9rem;
    }
 
-   .review:hover {
-      box-shadow: 0 0 25px #e9ecfa;
-   }
-
-
    .final {
       text-align: center;
-      padding-top: 12vw;
+      padding-top: 20vw;
       padding-bottom: 8vw;
       background-image: url(../images/background\ pic.jpg);
       background-size: cover;
       background-repeat: no-repeat;
-      background-position: center;
-      height: 30vw;
+      background-position: left;
+      height: 75vw;
    }
 
    .final h3 {
       font-size: 0.95rem;
       font-weight: 500;
-      padding-bottom: 2vw;
+      width: 85vw;
+      text-align: center;
+      padding-bottom: 4vw;
+      padding-left: 7vw;
       color: white;
    }
 
-   .final h2 {
-      font-size: 1.7rem;
+   .let{
+      display: none;
+   }
+   .lets{
+      display: block;
+      font-size: 1.5rem;
       line-height: 1.5;
       color: white;
+      width: 72vw;
+      padding-left: 14vw;
       padding-bottom: 6vw;
    }
 
@@ -2988,8 +2897,8 @@ footer{
       background-color: #5f69f8;
       font-weight: 550;
       border: 0.14vw solid #767de7;
-      padding: 3vw 4vw;
-      border-radius: 1vw;
+      padding: 4vw 5vw;
+      border-radius: 1.5vw;
    }
 
    .side-icons {
@@ -3011,20 +2920,29 @@ footer{
 
    .footer-header2 ol {
       display: flex;
-      gap: 3vw;
+      gap: 5vw;
       list-style-type: none;
       padding: 3vw 0;
       margin-left: 5vw;
       width: 88vw;
    }
 
+   .footer-header2 .column{
+      display: flex;
+      flex-direction: column;
+      gap: 3vw;
+   }
+   .footer-header2 .symbol{
+      display: flex;
+      gap: 8vw;
+   }
    .footer-header2 ol a {
       color: white;
       text-decoration: none;
       opacity: 0.85;
       overflow: hidden;
    }
-
+   
    .footer-header2 a:hover {
       color: #767de7;
       opacity: 1;
@@ -3055,10 +2973,10 @@ footer{
    }
 
    .ground p {
-      width: 48vw;
+      width: 85vw;
       color: white;
       opacity: 0.85;
-      line-height: 1.5;
+      line-height: 1.8;
    }
 
    .footer-main p {
@@ -3068,7 +2986,8 @@ footer{
    }
 
    .footer-main h3 {
-      padding-bottom: 3vw;
+      padding-bottom: 4vw;
+      padding-top: 3vw;
       color: white;
       opacity: 1;
    }
@@ -3089,18 +3008,10 @@ footer{
       border-bottom: 0.15vw solid #767de7;
    }
 
-   .bottom {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      padding: 2.2vw 0 9vw;
-      gap: 2vw;
-   }
-
    .copyright {
       color: white;
       opacity: 0.8;
+      padding-top: 3vw;
    }
 
    .bottom a {
