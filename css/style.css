@@ -3037,14 +3037,14 @@ body {
 @media (max-width:360px) {
    .top2 {
       padding-left: 4vw;
-      height: 12vw;
+      height: 13vw;
       width: 100%;
    }
 
    .num {
-      padding-top: 3vw;
-      font-size: 0.97rem;
-      margin-right: 1.8vw;
+      padding-top: 4.3vw;
+      font-size: 0.92rem;
+      margin-right: 1.2vw;
    }
 
    .number {
@@ -3068,7 +3068,7 @@ body {
    }
 
    #help {
-      margin-right: 15vw;
+      margin-right: 17.2vw;
    }
 
    .top2 p a {
@@ -3470,7 +3470,7 @@ body {
       width: 28vw;
       padding: 1.8vw 5vw;
       border-radius: 6vw;
-      margin-left: 48vw;
+      margin-left: 52vw;
    }
 
    .grid {
