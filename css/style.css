@@ -586,20 +586,30 @@ iframe {
 .flex{
    display: flex;
    justify-content: center;
-   gap: 6vw;
+   gap: 4vw;
+   width: 70vw;
+   padding-left: 58vw;
 }
-.flexs{
-   display: none;
-}
+
 #amazon{
    position: relative;
    top: 0.5vw;
 }
-.image-wrapper img{
+/* .
+.image img{
    opacity: 0.5;
    transition: 0.3s ease-in-out;
+   display: flex;
 }
-.image-wrapper img:hover{
+.image.wrapper img:hover{
+   opacity: 1; */
+
+.image img{
+   opacity: 0.5;
+   transition: 0.3s ease-in-out;
+   overflow: hidden;
+}
+.image img:hover{
    opacity: 1;
 }
 .arrow{
@@ -682,11 +692,11 @@ iframe {
    transition: transform 0.5s ease-in-out;
    transform: translateX(0);
 }
-.slide{
+.slide.one{
    min-width: 33.33%;
    display: flex;
 }
-.slide2{
+.slide{
    display: none;
 }
 button{

@@ -1,9 +1,7 @@
+const hamburger = document.querySelector('div.hamburger');
+hamburger.addEventListener("click", toggleMenu)
+const navlinks = document.querySelector('ol.navlinks');
 function toggleMenu() {
-    const hamburger =
-        document.querySelector('.hamburger');
-    const navlinks =
-        document.querySelector('.navlinks');
-
     hamburger.classList.toggle('active');
     navlinks.classList.toggle('active');
 }
@@ -22,27 +20,55 @@ if (thumb && frame) {
     console.error('❌ Elements not found!');
 };
 
-// const flex =
-// document.getElementById('flex');
-// const left = document.getElementById('left');
-// const right = document.getElementById('right');
+const slides =
+    document.querySelectorAll('div.slide');
+const leftBtn = document.getElementById('lftbtn');
+const rightBtn = document.getElementById('rgtbtn');
+let currentIndex = 0;
 
-// right.addEventListener('click', (e) => {flex.scrollBy({left:200, behaviour:'smooth' })});
-// left.addEventListener('click', (e) => {flex.scrollBy({left:-200, behaviour:'smooth'})});
+function showSlides(index) {
+    slides.forEach((slide) => {
+        slide.classList.remove("one");
+    });
+    slides[index].classList.add("one");
+}
 
-// const track =
-// document.getElementById('carouselTrack')
-// if (track) {
-//     const slide =
-//     track.querySelectorAll('.slide');
-//     const totalSlide = slide.length;
-//     let currentSlide = 0;
-// function moveSlide(direction) {
-//         if (currentSlide < 0){
-//             currentSlide = totalSlide - 1; }
-//             else if (currentSlide >= totalSlide){currentSlide = 0}
-//     const offset = -currentSlide * 100;
-//     track.style.transform = `translateX(${offset}%)`;
-//     window.moveSlide = moveSlide; }
-//     else { console.error("carousel track element with ID 'carouselTrack' not found"); }
-//         } 
+rightBtn.addEventListener("click", () => {
+    currentIndex++;
+    if (currentIndex >= slides.length) {
+        currentIndex = 0
+    }
+    showSlides(currentIndex);
+});
+leftBtn.addEventListener("click", () => {
+    currentIndex--;
+    if (currentIndex < 0) {
+        currentIndex = slides.length - 1
+    }
+    showSlides(currentIndex);
+});
+
+
+const flex =
+    document.querySelector('div#flex');
+const leftArrow = document.getElementById('left');
+const rightArrow = document.getElementById('right');
+
+let position = 0;
+const slideAmount = 200;
+
+rightArrow.addEventListener("click", ()=>{
+    const maxSlide = flex.scrollWidth - flex.parentElement.offsetWidth;
+    if (Math.abs(position) < maxSlide) {
+        position -= slideAmount;
+        flex.style.transform = `translateX(${position}px)`
+        }
+});
+leftArrow.addEventListener("click", ()=>{
+    if(position < 0){
+        position += slideAmount;
+        flex.style.transform = `translateX(${position}px)`
+    }
+});
+
+
